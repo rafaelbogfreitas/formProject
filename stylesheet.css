@@ -16,4 +16,6 @@ body h1 {
 }
 input {
   width:100px;
+  border-radius: 10%;
+  margin-top: 10px;
 }
