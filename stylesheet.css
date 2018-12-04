@@ -1,0 +1,19 @@
+body {
+  margin: 0 auto;
+  width:90%;
+  text-align: center;
+  border: 1px solid red;
+}
+body h1 {
+  color: blue;
+  opacity: 0.8;
+  text-shadow:0px 5px 5px blue, 0px -5px 5px red;
+  text-transform: uppercase;
+  font-family: helvetica;
+}
+.form-section {
+  /* border:0.5px solid lightgreen; */
+}
+input {
+  width:100px;
+}
