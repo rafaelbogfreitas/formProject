@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
@@ -8,32 +8,114 @@
     <title>d-dinner survey form</title>
   </head>
   <body>
+
+    <!-- MAIN HEADER -->
     <header>
       <h1 id='title'>D-Dinner</h1>
       <p id='description'>Help us find out how was your experience</p>
     </header>
+
+    <!-- NAME -->
     <form id="survey-form" action="" method="post" name="questions" >
-    <div class="form-section">
-      <label for="name">*Name</label>
-      <input type="text" name="name" id="name" required placeholder="Enter your name">
-    </div>
-    <div class="form-section">
-      <label for="number">*Age<label>
-      <input type="number" name="Age" id="number" required min="1" max="100" placeholder="Enter your age">
-    </div>
-    <div class="form-section">
-      <label for="email">*Email</label>
-      <input type="email" name="email" id="email" required placeholder="Enter your email">
-    </div>
-    <div class="form-section">
-      <label for=""></label>
-      <input type="text" name="" value="">
-    </div>
-    <div class="form-section">
-      <label for=""></label>
-      <input type="text" name="" value="">
-    </div>
-    </form>
+
+      <!-- PERSONAL INFO -->
+      <div id="info" class="blocks">
+
+        <!--NAME  -->
+        <div class="form-section">
+          <div class="labels">
+            <label  id="name-label" for="name">Name</label>
+          </div>
+          <div class="inputs">
+            <input type="text" name="name" id="name" required placeholder="Enter your name">
+          </div>
+        </div>
+
+        <!-- AGE -->
+        <div class="form-section">
+          <div class="labels">
+            <label id="number-label" for="number">Age</label>
+          </div>
+          <div class="inputs">
+            <input type="number" name="number" id="number" required min="1" max="100" placeholder="Enter your age">
+          </div>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="form-section">
+          <div class="labels">
+            <label id="email-label" for="email">Email</label>
+          </div>
+          <div class="inputs">
+            <input type="email" name="email" id="email" required placeholder="Enter your email">
+          </div>
+        </div>
+      </div>
+
+      <!-- WHERE, DATE AND TIME OF VISIT -->
+      <div id="info2" class="blocks">
+        <p>Let us know when did you visit us</p>
+
+        <!-- WHERE -->
+        <label for="branch">Which of our restaurants have you visited?</label>
+        <select name="branch" id="dropdown">
+          <option value="city">City of London</option>
+          <option value="old-street">Old Street</option>
+          <option value="Chelsea">Chelsea</option>
+          <option value="Islington">Islington</option>
+        </select>
+
+        <!-- VISIT TIME -->
+        <div class="form-section">
+          <label for="time">Time of Visit</label>
+          <input type="time" name="time" id="time">
+        </div>
+
+        <!-- DATE OF VISIT -->
+        <div class="form-section">
+          <label for="date">Visit Date</label>
+          <input type="date" name="date" id="visit_date" min="2018-01-01" max="2019-01-01">
+        </div>
+      </div>
+
+      <!-- EXPERIENCE 1 -->
+      <div id="info3" class="blocks">
+        <p>How Would You Describe Your Visit?</p>
+        <ul>
+          <li>
+            <label for="experience">Great! Cheers!</label>
+            <input type="radio" name="experience" id="experience" value="great">
+          </li>
+          <li>
+            <label for="experience">Good, Thanks!</label>
+            <input type="radio" name="experience" id="experience" value="good">
+          </li>
+          <li>
+            <label for="experience">Average</label>
+            <input type="radio" name="experience" id="experience" value="average">
+          </li>
+          <li>
+            <label for="experience">Honestly...</label>
+            <input type="radio" name="experience" id="experience" value="honestly">
+          </li>
+          <li>
+            <label for="experience">Disgusting!</label>
+            <input type="radio" name="experience" id="experience" value="disgusting">
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- EXPERIENCE 2 -->
+      <div id="info4" class="blocks">
+        <p>What most impressed you in DDinner?</p>
+
+
+
+      </div>
+  </form>
+
+    <!-- FOOTER -->
     <footer>&copy; by Rafael Borges</footer>
   </body>
 </html>
