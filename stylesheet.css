@@ -25,21 +25,25 @@ body h1 {
   color: blue;
   opacity: 0.8;
   font-weight: lighter;
-  text-transform: uppercase;
+  text-transform:uppercase;
   font-family: helvetica;
   font-size: 4rem;
-}
-.blocks {
-  margin:2%;
-  border: 1px solid red;
-}
+  }
+
+  .blocks {
+    margin:2%;
+    border: 1px solid red;
+  }
+
 .form-section {
   /* border:0.5px solid lightgreen; */
 }
+
 #description {
   font-size: 0.9rem;
   margin:0.5%;
 }
+
 input {
   width:100px;
   border-radius: 10%;
