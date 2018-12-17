@@ -7,10 +7,10 @@ html {
 }
 
 body {
-  margin: 0 auto;
+  margin: 4% auto;
   width:90%;
-  border: 1px solid red;
-  /* background: rgba(195, 147, 2, 0.07); */
+  border: 2px solid rgb(71, 96, 101);
+  background: rgb(162, 199, 205);
 }
 
 header {
@@ -23,14 +23,11 @@ footer {
 
 p {
   margin:1%;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: normal;
   opacity: 0.9;
   margin-bottom: 2%;
-}
-
-li {
-  width:60%;
+  color: rgb(71, 96, 101);
 }
 
 input {
@@ -39,41 +36,36 @@ input {
 }
 
 .blocks {
-  margin:2%;
-  border: 1px solid red;
-  /* background: white; */
-}
-
-.form-section {
-  /* margin:3%; */
+  margin:1%;
+  border: 1.3px solid white;
+  background:rgb(237, 242, 242);
 }
 
 .labels {
   width:45%;
   display: inline-block;
-  margin-left: 5%;
+  margin-left: 2%;
   margin-bottom: 1%;
+  color: rgb(71, 96, 101);
 }
 
 .inputs {
   width:45%;
   display: inline-block;
-  margin-left: -5%;
-  margin-bottom: 1%;
+  margin-bottom:1%;
 }
 
 textarea {
-  margin-left: 3%;
+  margin-left: 2%;
   margin-bottom: 2%;
-  margin-top: 1%;
+  margin-top: 0.6%;
   width:50%;
   height:100px;
-  display: inline;
+  /* display: inline; */
 }
 
 body h1 {
-  color: rgb(183, 15, 0);
-  opacity: 0.8;
+  color: rgb(71, 96, 101);
   font-weight: lighter;
   text-transform:uppercase;
   font-family: helvetica;
@@ -84,31 +76,65 @@ body h1 {
   font-size: 0.93rem;
   margin:0.5%;
   margin-top: -0.5%;
+  color: rgb(71, 96, 101);
 }
 
 #button {
   position:relative;
-  left:80%;
-  color:red;
-  border:1px solid red;
-  /* background:rgb(40, 76, 127); */
-  width:10%;
+  left:85%;
+  color:white;
+  border:1px solid white;
+  background:rgb(71, 96, 101);
+  width:100px;
 }
-
-/* BLOCKS POSITIONING */
-
-/* #info {
-  width:45%;
-  display:inline-block;
-}
-
-#info2 {
-  width:45%;
-  display:inline-block;
-
-} */
 
 /* RESPONSIVE */
+
+@media only screen and (min-width:1050px) {
+
+/* BLOCKS POSITIONING */
+  p {
+    margin-bottom: 3%;
+  }
+
+  .labels {
+    font-size: 0.9rem;
+  }
+
+  #info {
+    width:47.6%;
+    height: 150px;
+    float:left;
+  }
+
+  #info2 {
+    width:47.6%;
+    height: 150px;
+    float:left;
+  }
+
+  #info3 {
+    width:31%;
+    float:left;
+    height: 250px;
+  }
+
+  #info4 {
+    width: 31%;
+    float: left;
+    height: 250px;
+  }
+
+  #info5 {
+    width: 31%;
+    float: left;
+    height: 250px;
+  }
+
+  #info6 {
+    clear: both;
+  }
+}
 
 @media only screen and (max-width:530px) {
   html {
@@ -116,7 +142,20 @@ body h1 {
   }
 
   header {
-    margin-left: 25%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  input {
+    width: 90%;
+  }
+
+  #button {
+    left: 40%;
+  }
+
+  textarea {
+    width: 90%;
+    height: 50px;
   }
 }
 
@@ -124,4 +163,13 @@ body h1 {
   html {
     font-size: 14px;
   }
+
+  .inputs {
+    margin-left:0;
+  }
+
+  #button {
+   left: 60%;
+  }
+
 }
