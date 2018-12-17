@@ -16,7 +16,7 @@
     </header>
 
     <!-- FORM -->
-    <form id="survey-form" action="" method="post" name="questions" >
+    <form id="survey-form" method="post" name="questions" >
 
       <!-- PERSONAL INFO -->
       <div id="info" class="blocks">
@@ -58,8 +58,8 @@
         <p>Let us know when did you visit us</p>
 
         <!-- WHERE -->
-        <label for="branch">Which of our restaurants have you visited?</label>
-        <select name="branch" id="dropdown">
+        <label for="branch" class="labels">Which of our restaurants have you visited?</label>
+        <select name="branch" id="dropdown" class="inputs">
           <option value="city">City of London</option>
           <option value="old-street">Old Street</option>
           <option value="Chelsea">Chelsea</option>
@@ -69,103 +69,109 @@
 
         <!-- VISIT TIME -->
         <div class="form-section">
-          <label for="time">Time of Visit</label>
-          <input type="time" name="time" id="time">
+          <label for="time" class="labels">Time of Visit</label>
+          <input type="time" name="time" id="time" class="inputs">
         </div>
 
         <!-- DATE OF VISIT -->
         <div class="form-section">
-          <label for="date">Visit Date</label>
-          <input type="date" name="date" id="visit_date" min="2018-01-01" max="2019-01-01">
+          <label for="date" class="labels">Visit Date</label>
+          <input type="date" name="date" id="visit_date" class="inputs" min="2018-01-01" max="2019-01-01">
         </div>
       </div>
 
       <!-- FIND OUT -->
-      <div id="info5" class="blocks">
+      <div id="info3" class="blocks">
         <p>How did you find out about us</p>
 
         <!-- add input inside the label tag, before the string, to get them aligned -->
         <ul>
           <li>
-            <label for="social-media"><input type="checkbox" name="social-media" value="1">Social Media</label>
+            <label for="social-media" class="labels">Social Media</label>
+            <input class="inputs" type="checkbox" name="social-media" value="1">
           </li>
           <li>
-            <label for="Friends"><input type="checkbox" name="Friends" value="1">Friends</label>
+            <label for="Friends" class="labels">Friends</label>
+            <input class="inputs" type="checkbox" name="Friends" value="2">
           </li>
           <li>
-            <label for="TV"><input type="checkbox" name="TV" value="1">TV</label>
+            <label for="TV" class="labels">TV</label>
+            <input class="inputs" type="checkbox" name="TV" value="3">
           </li>
           <li>
-            <label for="radio"><input type="checkbox" name="radio" value="1">Radio</label>
+            <label for="radio" class="labels">Radio</label>
+            <input class="inputs" type="checkbox" name="radio" value="4">
           </li>
           <li>
-            <label for="newspaper"><input type="checkbox" name="newspaper" value="1">Newspaper</label>
+            <label for="newspaper" class="labels">Newspaper</label>
+            <input class="inputs" type="checkbox" name="newspaper" value="5">
           </li>
           <li>
-            <label for="other"><input type="checkbox" name="other" value="1">Other</label>
+            <label for="other" class="labels">Other</label>
+            <input class="inputs" type="checkbox" name="other" value="6">
           </li>
         </ul>
       </div>
 
       <!-- DESCRIPTION OF VISIT -->
-      <div id="info3" class="blocks">
+      <div id="info4" class="blocks">
         <p>How Would You Describe Your Visit?</p>
         <ul>
           <li>
-            <label for="experience">Great! Cheers!</label>
-            <input type="radio" name="experience" id="experience" value="great">
+            <label for="experience" class="labels">Great! Cheers!</label>
+            <input type="radio" name="experience" id="experience" class="inputs" value="great">
           </li>
           <li>
-            <label for="experience">Good, Thanks!</label>
-            <input type="radio" name="experience" id="experience" value="good">
+            <label for="experience" class="labels">Good, Thanks!</label>
+            <input type="radio" name="experience" id="experience" class="inputs" value="good">
           </li>
           <li>
-            <label for="experience">Average</label>
-            <input type="radio" name="experience" id="experience" value="average">
+            <label for="experience" class="labels">Average</label>
+            <input type="radio" name="experience" id="experience" class="inputs" value="average">
           </li>
           <li>
-            <label for="experience">Honestly...</label>
-            <input type="radio" name="experience" id="experience" value="honestly">
+            <label for="experience" class="labels">Honestly...</label>
+            <input type="radio" name="experience" id="experience" class="inputs" value="honestly">
           </li>
           <li>
-            <label for="experience">Disgusting!</label>
-            <input type="radio" name="experience" id="experience" value="disgusting">
+            <label for="experience" class="labels">Disgusting!</label>
+            <input type="radio" name="experience" id="experience" class="inputs" value="disgusting">
           </li>
         </ul>
       </div>
 
       <!-- IMPRESSED -->
-      <div id="info4" class="blocks">
+      <div id="info5" class="blocks">
         <p>What most impressed you in DDinner?</p>
 
         <ul>
           <li>
-            <label for="impressed">Environment</label>
-            <input type="radio" name="impressed" id="experience" value="great">
+            <label for="impressed" class="labels">Environment</label>
+            <input type="radio" name="impressed" id="experience" class="inputs" value="great">
           </li>
           <li>
-            <label for="impressed">Food</label>
-            <input type="radio" name="impressed" id="experience" value="good">
+            <label for="impressed" class="labels">Food</label>
+            <input type="radio" name="impressed" id="experience" class="inputs" value="good">
           </li>
           <li>
-            <label for="impressed">Staff</label>
-            <input type="radio" name="impressed" id="experience" value="average">
+            <label for="impressed" class="labels">Staff</label>
+            <input type="radio" name="impressed" id="experience" class="inputs" value="average">
           </li>
           <li>
-            <label for="impressed">Location</label>
-            <input type="radio" name="impressed" id="experience" value="location">
+            <label for="impressed" class="labels">Location</label>
+            <input type="radio" name="impressed" id="experience" class="inputs" value="location">
           </li>
           <li>
-            <label for="impressed">Decor</label>
-            <input type="radio" name="impressed" id="experience" value="decor">
+            <label for="impressed" class="labels">Decor</label>
+            <input type="radio" name="impressed" id="experience" class="inputs" value="decor">
           </li>
           <li>
-            <label for="impressed">Wine List</label>
-            <input type="radio" name="impressed" id="experience" value="wine list">
+            <label for="impressed" class="labels">Wine List</label>
+            <input type="radio" name="impressed" id="experience" class="inputs" value="wine list">
           </li>
           <li>
-            <label for="impressed">Decor</label>
-            <input type="radio" name="impressed" id="experience" value="decor">
+            <label for="impressed" class="labels">Decor</label>
+            <input type="radio" name="impressed" id="experience" class="inputs" value="decor">
           </li>
         </ul>
       </div>
